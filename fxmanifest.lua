@@ -1,6 +1,6 @@
 fx_version 'cerulean'
 game 'gta5'
-version '1.1.1'
+version '1.1.2'
 
 description 'qbx_truckrobbery'
 repository 'https://github.com/Qbox-project/qbx_truckrobbery'
@@ -19,7 +19,10 @@ client_scripts {
     'client/main.lua',
 }
 
-server_script 'server/main.lua'
+server_scripts {
+	'server/main.lua',
+	'server/pn-lib-config.lua',
+}
 
 files {
     'config/client.lua',
